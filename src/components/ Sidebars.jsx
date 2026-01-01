@@ -6,11 +6,11 @@ export default function Sidebar() {
       <Logo />
 
       <nav>
-        <a>🏠 Home</a>
-        <a>🔥 Discover</a>
-        <a>🎸 Genres</a>
-        <a>📈 Trending</a>
-        <a>💿 Library</a>
+        <a>Home</a>
+        <a>Discover</a>
+        <a>Genres</a>
+        <a>Trending</a>
+        <a>Library</a>
       </nav>
     </aside>
   )

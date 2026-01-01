@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #15151f, #0b0b10);
+  color: white;
+}
+
+/* App */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: linear-gradient(180deg, #15151c, #0e0e13);
+  padding: 24px;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #1db954;
+}
+
+.logo svg {
+  filter: drop-shadow(0 0 6px rgba(29, 185, 84, 0.6));
+}
+
+/* Nav */
+.sidebar nav a {
+  display: block;
+  margin: 14px 0;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.sidebar nav a:hover {
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.topbar button {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.topbar button:hover {
+  background: #1db954;
+  box-shadow: 0 0 12px rgba(29, 185, 84, 0.6);
+}
+
+/* Artist row */
+.artist-row {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.artist-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1db954, #1ed760);
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px rgba(29, 185, 84, 0.6);
+  transition: 0.3s;
+}
+
+.artist-card:hover .avatar {
+  transform: scale(1.1);
+}
+
+/* Music grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 22px;
+}
+
+.music-card {
+  background: linear-gradient(180deg, #1a1a1a, #121212);
+  padding: 14px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.music-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cover {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, #333, #555);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.music-card h4 {
+  font-size: 14px;
+}
+
+.music-card p {
+  font-size: 12px;
+  color: #aaa;
+}
